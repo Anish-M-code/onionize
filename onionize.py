@@ -17,15 +17,16 @@ def get_domains():
     while 1:
         x=input('Enter domain of clearnet website:')
         choice=input('\nDo you want enter more domains?(y/n):')
+        domain.append(x)
         if choice.lower() != 'y':
             break
     return domain
 
-print('    --- ONIONIZE: CREATE ONION MIRROR FOR WEBSITES --- ')
+print('\n    --- ONIONIZE: CREATE ONION MIRROR FOR WEBSITES --- ')
 while 1:
 
     print('\n Select os to install :-')
-    print('\n 1) Raspbian ')
+    print('\n1) Raspbian ')
     print('2) Ubuntu 20.04LTS ')
     print('3) Ubuntu 18.04LTS ')
     print('4) CentOS 8.2.2004 ')
@@ -77,7 +78,7 @@ domainlist=get_domains()
 with open("tor_server.tconf",'w') as f:
     f.write("set project tor_server\n")
     for domain in domainlist:
-        f.write("hardmap %NEW_V3_ONION% "+domain)
+        f.write("hardmap %NEW_V3_ONION% "+domain+"\n")
     
 os.system("sudo ./eotk config tor_server.tconf")
 os.system('sudo ./eotk config tor_server.conf')
