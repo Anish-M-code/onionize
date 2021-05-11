@@ -33,7 +33,7 @@ python3 onionize.py
 It will start downloading and building required packages. 
 Follow onscreen instructions to enter website domains and it will create onion mirror!
 
-<img src="https://github.com/Anish-M-code/onionize/raw/main/screenshot2.JPG
+<img src="https://github.com/Anish-M-code/onionize/raw/main/screenshot2.JPG">
 
 ### Warnings
 Use at your own risk , developer not responsible for any damage arising from use of this 
