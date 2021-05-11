@@ -1,2 +1,5 @@
 # onionize
 Script to create Onion Mirror for Clearnet site based on Enterprise Onion Toolkit
+
+Use at your own risk developer not responsible for any damage arising from use of this 
+tool. Developed for education and research use only.
